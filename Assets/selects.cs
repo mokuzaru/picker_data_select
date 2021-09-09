@@ -6,18 +6,12 @@ using UnityEngine.UI;
 public class selects : MonoBehaviour
 {
     public GameObject te;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    
+    //For multiple choice
+    public void Mostrar(string[] message){
+        te.GetComponent<UnityEngine.UI.Text>().text = string.Join(" - ",message);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    //for data and time
     public void mostrar(string message){
         te.GetComponent<UnityEngine.UI.Text>().text = message;
     }
